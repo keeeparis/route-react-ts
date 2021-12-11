@@ -7,7 +7,7 @@ import { queryConfig } from './config'
 
 
 function App() {
-    // идея - обернуть все приложение в обертку для получения доступа к геопоиску и suggest не через CDN !TODO:
+    // идея - обернуть все приложение в обертку для получения доступа к геопоиску и suggest не через CDN
     const WithYmapsWrapper = useMemo(() => {
         return withYMaps(MainComponent, true, [
             "SuggestView",
